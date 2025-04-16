@@ -20,7 +20,15 @@
     <meta name="keywords" content="{{ site.keywords }}" />
     <!-- request path: {{ __uri__ }} -->
     <title>{% block title %} title {% endblock %}</title>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCTSCEHYCW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-DCTSCEHYCW');
+    </script>
     {% include "__analytics__.html" %}
 
     <script>
